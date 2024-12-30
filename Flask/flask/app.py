@@ -11,5 +11,10 @@ def welcome():
     return "Welcome to this Flask course"
 
 
+@app.route("/index")
+def index():
+    return "Welcome to index"
+
+
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
