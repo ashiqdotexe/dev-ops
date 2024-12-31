@@ -1,3 +1,6 @@
-<h1>
-    Based on your mark you have {{results}}
-</h1>
+<html>
+    <h1>Final Results</h1>
+    {% for key, value in results.items() %}
+    <h1>Based on your {{ key }}, you have {{ value }}</h1>
+    {% endfor %}
+</html>
